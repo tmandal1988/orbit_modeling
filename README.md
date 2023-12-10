@@ -20,3 +20,5 @@ make -C build
 ```
 To keep things simple the test case is hardcoded in `main.cc`. The test was implemented for a satellite with an initial position of  `[6.778100e6, 0.0, 100e3]` m in ECI frame and an initial velocity of `7.66e3` m/s. Satellite orbit was simulated for `27000`s duration and the results in a .csv file which can be used for plotting in post run analysis. The plot of the test case looks like following.
 ![Test Satellite Orbit](orbit_plot.png)
+
+**Note: Plot was created using python code which is not included in this repository**
