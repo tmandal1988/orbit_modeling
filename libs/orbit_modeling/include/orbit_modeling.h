@@ -5,7 +5,7 @@ LEO from altitude of 500km to 2000km above mean Earth radius
 #ifndef ORBITMODELING_H
 #define ORBITMODELING_H
 
-#include <gravity_model_jgm3.h>
+#include <gravity_model.h>
 
 
 class OrbitModeling{
