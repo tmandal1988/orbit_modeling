@@ -36,8 +36,8 @@ array<float, 3> GravityModelJgm3::GetGravityAccel(array<float, 3> const &sat_eci
 	array<float, 3> gravity_accel_mps2;
 
 	// Temp variables so that we don't have to compute same number more than once
-	float temp_mu_over_r = this->mu_m3ps2_/sat_r_m2;
-	float temp_radius_over_r = pow(this->mean_planet_radius_m_, 2)/sat_r_m2;
+	float temp_mu_over_r = mu_m3ps2_/sat_r_m2;
+	float temp_radius_over_r = pow(mean_planet_radius_m_, 2)/sat_r_m2;
 	float temp_sat_r_m = sqrt(sat_r_m2);
 	float temp_z_over_r = pow(z_m, 2)/sat_r_m2;
 
