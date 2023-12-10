@@ -1,10 +1,10 @@
 # Simple Orbit Simulation
-This repository implements a simple orbit simulation which uses JGM-3 coefficients with spherical harmonic geopotential model to compute acceleration due to gravity. For simplicity only degree 2 zonal coefficient is used as zonal coefficients corresponding to degree >2 are significantly smaller than the zonal coefficients corresponding to degree 2. Also tesseral and sectoral terms have been ignored since their contributions are also insignificant for For a satellite requiring accuracies of a few meters.[Ref](https://spsweb.fltops.jpl.nasa.gov/portaldataops/mpg/MPG_Docs/Source%20Docs/gravity-SphericalHarmonics.pdf)
+This repository implements a simple orbit simulation which uses JGM-3 coefficients with spherical harmonic geopotential model to compute acceleration due to gravity. For simplicity only degree 2 zonal coefficient is used as zonal coefficients corresponding to degree >2 are significantly smaller than the zonal coefficients corresponding to degree 2. Also tesseral and sectoral terms have been ignored since their contributions are also insignificant for a satellite requiring position accuracies of a few meters.[Ref](https://spsweb.fltops.jpl.nasa.gov/portaldataops/mpg/MPG_Docs/Source%20Docs/gravity-SphericalHarmonics.pdf)
 
 ## Limitations
 
-- Only tested for Low Earth Orbits. Orbit height between 600 - 2000km above mean Earth radius.
-- Doesn't consider gravitational impact of other celestial bodies for ex. Sun and Moon.
+- Only tested for Low Earth Orbits. Orbit height between 400 - 2000km above mean Earth radius.
+- Doesn't consider gravitational impact of other celestial bodies for ex. Sun, Moon etc.
 - Oversimplified for demo implementation.
 
 ## Setup
