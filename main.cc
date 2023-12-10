@@ -20,14 +20,19 @@ int main(int argc, char *argv[]){
 
 	array<float, 3> sat_eci_pos;
 
-	// Save sim data to .CSV for post inspection to create plots with python
+	// Create a .csv file to save sim data for post inspection to create plots with python
 	std::ofstream orbit_save_file;
     orbit_save_file.open ("orbit_sim_data.csv");
 	orbit_save_file <<"Time,X,Y,Z\n";
+
+	// Run sim till sim_duration_s
 	while(sim_time_s < sim_duration_s){
+		// Integration step
 		test_orbit.Step(test_gravity);
+		// Write to file
 		sat_eci_pos = test_orbit.GetCurrSatEciPos();
 		orbit_save_file <<sim_time_s<<", "<<sat_eci_pos[0]<<", "<<sat_eci_pos[1]<<", "<<sat_eci_pos[2]<<"\n";
+		// Increment sim time
 		sim_time_s += sample_time_s;
 	}
 

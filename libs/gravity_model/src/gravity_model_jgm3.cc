@@ -13,8 +13,8 @@ GravityModelJgm3::~GravityModelJgm3(){
 /* Returns an array of length 3 containing X, Y, Z components of
 gravity acceleration (m/s^2) in Earth Centered Inertial (ECI) frame. This does
 not account for Tesseral and Sectoral terms as they are significantly
-smaller than zonal terms and hence not consequential for meter level accuracy.
-Also only 2nd order Zonal coefficients are used since in JGM3 model 3rd order 
+smaller than zonal terms and hence not consequential for few meters level accuracy.
+Also only 2nd degree Zonal coefficients are used since in JGM3 model 3rd degree and higher 
 Zonal coefficients are more than 3 orders of magnitude smaller and also to keep
 the computations simple.
 ref: 

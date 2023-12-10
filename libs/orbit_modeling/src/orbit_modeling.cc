@@ -49,7 +49,9 @@ void OrbitModeling::Step(GravityModel &gravity_model){
 	forward Euler is used
 	*/
 	for (size_t idx = 0; idx < 3; idx++){
+		// Position integration
 		sat_curr_eci_pos_m_[idx] += sat_curr_eci_vel_mps_[idx]*sample_time_s_ + 0.5*pow(sample_time_s_, 2)*grav_accel_eci_mps2[idx];
+		// Velocity integration
 		sat_curr_eci_vel_mps_[idx] += sample_time_s_*grav_accel_eci_mps2[idx];
 	}
 
